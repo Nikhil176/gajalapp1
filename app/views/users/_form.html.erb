@@ -14,7 +14,7 @@
   <%= f.password_field :password_confirmation, class: 'form-control' %>
 
 <%= f.label :admin %>
-<%= f.boolean_field :admin %>
+<%= f.text_field :admin %>
 
   <%= f.submit yield(:button_text), class: "btn btn-primary" %>
 <% end %>
