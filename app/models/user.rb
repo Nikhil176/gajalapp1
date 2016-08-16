@@ -56,7 +56,7 @@ class User < ActiveRecord::Base
   end
 
   def self.search(search)
-    where("name LIKE ?", "%#{search}%")
+    where("LOWER(name) LIKE ?", "%#{search}%")
   end
 
 end
